@@ -21,10 +21,10 @@ def calculator_function():
  continue_flag=True
  while continue_flag:
    op_symbol=input("pick an operation:")
-   num2=int(input("enter the first number:"))
+   num2=int(input("enter the second number:"))
    calculator=operations_dict[op_symbol]
    output=calculator(num1,num2)
-   print(f"{num1} {num2} {op_symbol}={output}")
+   print(f"{num1} {op_symbol} {num2} = {output}")
    should_continue=input(f"enter 'y' to continue calculation with {output} or 'n' to start a new calculation or 'x' to exit").lower()
    if should_continue=='y':
     num1=output
